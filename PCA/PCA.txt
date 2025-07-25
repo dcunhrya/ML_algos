@@ -1,0 +1,13 @@
+PCA- Principal Component Analysis
+Not necessarily dimensionality reduction (can be depending on PC chosen)
+Finds principal components each with an explained variance of features
+Reduces features while retaining highest variance data
+Elbow plot: PCs vs % explained variance
+PCs = # features
+larger eigenvalue = more explained variance
+
+Steps for solving:
+- Standardize and center data
+- Find covariance matrix 
+- Eigen decomposition and find PCs
+- Project data into lower dimension (eigenvector * data)

@@ -1,0 +1,14 @@
+algos to implement from scratch:
+- PCA
+- Naive Bayes (Gaussian and Bernoulli)
+Decision Tree
+Random Forest
+SVM
+- Linear regression (OLS and gradient decent)
+- Logistic regression
+kNN
+- k-means clustering
+
+Basic stats components:
+Covariance
+Calculate eigenvalues

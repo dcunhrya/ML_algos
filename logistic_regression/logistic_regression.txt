@@ -1,0 +1,14 @@
+Logistic regression- 1 layer neural network with sigmoid
+loss is BCE
+
+Loss = -1/N * Σ [y * log(σ(x)) + (1 - y) * log(1 - σ(x))]
+Sigmoid = σ(x) = 1 / (1 + exp(-x))
+∂Loss/∂w = -1/N * Σ [x * (y - σ(x))]
+∂Loss/∂b = -1/N * Σ (y - σ(x))
+
+∂Loss/∂y_hat = -1/N * Σ [y / σ(x) - (1 - y) / (1 - σ(x))]
+∂y_hat/∂z = σ(x) * (1 - σ(x))
+∂z/∂w = x
+multiply together to get the gradient
+
+bias can be separate vector or within feature weights matrix

@@ -1,0 +1,7 @@
+k-means clustering
+
+relocative clustering (fixed number of clusters that are reassigned iteratively)
+1. Find distance between each point and each cluster center
+2. Assign each point to the cluster with the closest center
+3. Recalculate the cluster centers based on the points assigned to each cluster
+4. Repeat steps 1-3 until the cluster centers do not change significantly or max iterations reached

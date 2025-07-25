@@ -1,0 +1,16 @@
+Naive Bayes:
+- Useful for limited data points and initial prototype
+- Naive assumption- features mutually independent (can multiply conditional probabilities)
+- Trying to learn p(y|X) where y is class and X is features
+
+p(y|X) = p(y) * p(X|y) / p(X)
+- p(y) is the prior probability of class y
+- p(X|y) is the likelihood of features X given class y (modeled with Gaussian/Bernoulli)
+- p(X) is the evidence, which can be ignored for classification
+- p(y|X) is the posterior probability of class y given features X
+
+y = argmax_y p(y|X) = argmax_y p(y) * p(X|y) [we can get ride of p(X) since it is constant for all classes]
+y = argmax_y log p(y) + log p(X|y)  [probabilities can be small, so we use log to avoid underflow]
+
+Calculate posterior probability for each class
+Choose class with highest posterior probability

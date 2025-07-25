@@ -1,0 +1,23 @@
+Linear regression
+
+OLS:
+derivation:
+e = y - Xβ
+SSE = e'e = (y - Xβ)'(y - Xβ)
+SSE = y'y - 2y'Xβ + β'X'Xβ
+SSE = y'y - 2β'X'y + β'X'Xβ
+dSSE/dβ = -2X'y + 2X'Xβ = 0
+X'y = X'Xβ
+β = (X'X)^{-1}X'y
+
+Time complexity of matrix multiplication: O(n^2m)
+Time complexity of matrix inversion: O(n^3)
+Only useful in closed form for small matrices with small number of features.
+
+Gradient descent:
+β = β - α∇MSE
+∇MSE = -2X'y + 2X'Xβ
+= -2X'(y - Xβ) = X'(Xβ - y)
+Initial guess(β = 0), multiply X and guess, find MSE, multiply with X to get gradient, update β. 
+Time complexity of gradient descent: O(nm) per iteration
+Better for larger datasets.
