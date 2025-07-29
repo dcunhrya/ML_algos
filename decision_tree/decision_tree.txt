@@ -1,0 +1,8 @@
+Decision Tree- 
+
+Information Gain = Entropy(parent) - [Weighted Average] * Entropy(children)
+Entropy = -Σ(p * log2(p)) for each class
+Stopping criteria: 
+1. All instances in a node belong to the same class.
+2. No more features to split on.
+3. Maximum tree depth reached.

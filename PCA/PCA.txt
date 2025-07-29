@@ -11,3 +11,5 @@ Steps for solving:
 - Find covariance matrix 
 - Eigen decomposition and find PCs
 - Project data into lower dimension (eigenvector * data)
+
+** To apply PCA, dot matrix (standardized) with eigenvectors (in matrix form) **
