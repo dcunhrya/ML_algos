@@ -1,0 +1,2 @@
+# Ignore anything with pycache
+__pycache__/
